@@ -1,5 +1,12 @@
+import Navbar from '../components/Navbar';
+
 const Landing = () => {
-  return <div>Landing</div>;
+  return (
+    <>
+      <Navbar />
+      <main>Landing Page</main>
+    </>
+  );
 };
 
 export default Landing;

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 type AuthType = 'signup' | 'login';
 
 const Auth = ({ type }: { type: AuthType }) => {
@@ -31,12 +33,12 @@ const Auth = ({ type }: { type: AuthType }) => {
             {type == 'signup'
               ? 'Already have an account?'
               : "Don't have an account?"}{' '}
-            <a
+            <Link
               className="text-black underline"
-              href={type == 'signup' ? '/login' : '/signup'}
+              to={type == 'signup' ? '/login' : '/signup'}
             >
               {type == 'signup' ? 'Log in here' : 'Sign up here'}.
-            </a>
+            </Link>
           </p>
         </div>
       </div>

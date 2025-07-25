@@ -3,7 +3,7 @@ import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between h-[3.7rem] px-3 lg:px-8 bg-white">
+    <nav className="flex justify-between h-[3.9rem] px-3 lg:px-8 bg-white">
       <Link to="/" className="flex items-center">
         <img src="/logo.png" alt="Black colored tick mark" className="size-8" />
         <h1 className="text-3xl ml-1 font-medium -tracking-wider">
